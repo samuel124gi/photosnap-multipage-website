@@ -12,8 +12,7 @@ interface ButtonProps {
 export const Button = ({ variant, label, children, onClick }: ButtonProps) => {
   return (
     <StyledButton variant={variant} onClick={onClick}>
-      {label}
-      {children}
+      {label || children}
     </StyledButton>
   );
 };

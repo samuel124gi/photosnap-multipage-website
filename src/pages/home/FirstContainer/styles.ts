@@ -2,13 +2,12 @@ import styled from "@emotion/styled";
 import colors from "../../../styles/colors";
 
 export const TextContainer = styled.div`
-  padding: 100px 65px;
+  padding: 0px 65px;
   color: ${colors.white};
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 30px;
-  height: fit-content;
+  height: 100%;
 `;
 
 export const ColorContainer = styled.div`
@@ -53,4 +52,10 @@ export const Text = styled.p`
   line-height: 25px;
   letter-spacing: 0px;
   opacity: 0.6;
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
 `;

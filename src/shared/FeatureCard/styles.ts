@@ -9,9 +9,11 @@ export const InnerContainer = styled.div`
   width: 1100px;
   max-width: 1100px;
   display: flex;
-  margin: 100px auto;
+  margin: 0px auto;
   gap: 30px;
   justify-content: space-between;
+  height: 50vh;
+  align-items: center;
 `;
 
 export const Container = styled.div`

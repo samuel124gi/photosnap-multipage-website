@@ -3,12 +3,11 @@ import colors from "../../../styles/colors";
 
 export const TextContainer = styled.div`
   color: ${colors.black};
-  padding: 100px 63px;
+  padding: 0px 63px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 30px;
-  height: fit-content;
+  height: 100%;
 `;
 
 export const ImageContainer = styled.div`
@@ -42,4 +41,9 @@ export const Text = styled.p`
   line-height: 25px;
   letter-spacing: 0px;
   opacity: 0.6;
+`;
+export const ButtonContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
 `;

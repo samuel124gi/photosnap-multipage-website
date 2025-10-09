@@ -6,9 +6,9 @@ import {
   FeatureHeading,
   FeatureSubTitle,
 } from "./styles";
-import Image1 from "../../assets/responsive.svg";
-import Image2 from "../../assets/no-limit.svg";
-import Image3 from "../../assets/attention.svg";
+import Image1 from "../../assets/icons/responsive.svg";
+import Image2 from "../../assets/icons/no-limit.svg";
+import Image3 from "../../assets/icons/attention.svg";
 
 const FEATURES = [
   {

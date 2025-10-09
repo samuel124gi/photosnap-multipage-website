@@ -1,66 +1,66 @@
 import {
-  BlogContainer,
-  BlogImage,
-  BlogImageContainer,
+  CardContainer,
+  CardImage,
+  CardImageContainer,
   Line,
   Author,
   Title,
-  BlogDescription,
-  BlogLink,
-  BlogText,
+  CardDescription,
+  CardLink,
+  CardText,
 } from "./styles";
 
-import Image1 from "../../images/mountains.jpg";
-import Image2 from "../../images/cityscapes.jpg";
-import Image3 from "../../images/18-days-voyage.jpg";
-import Image4 from "../../images/architecturals.jpg";
+import mountain from "../../assets/images/mountains.jpg";
+import cityscpaes from "../../assets/images/cityscapes.jpg";
+import voyage from "../../assets/images/18-days-voyage.jpg";
+import archi from "../../assets/images/architecturals.jpg";
 import Button from "../Button";
-import Arrow from "../../assets/button-arrow.svg";
+import Arrow from "../../assets/icons/button-arrow.svg";
 
 const BLOGS = [
   {
-    image: Image1,
+    image: mountain,
     title: "The Mountains",
     author: "by John Appleseed",
   },
   {
-    image: Image2,
+    image: cityscpaes,
     title: "Sunset Cityscapes",
     author: "by Benjamin Cruz",
   },
   {
-    image: Image3,
+    image: voyage,
     title: "18 Days Voyage",
     author: "by Alexei Borodin",
   },
   {
-    image: Image4,
+    image: archi,
     title: "Architecturals",
     author: "by Samantha Brooke",
   },
 ];
 const Card = () => {
   return (
-    <BlogContainer>
+    <CardContainer>
       {BLOGS.map((blog) => (
         <>
-          <BlogImageContainer>
-            <BlogImage src={blog.image} />
-            <BlogDescription>
-              <BlogText>
+          <CardImageContainer>
+            <CardImage src={blog.image} />
+            <CardDescription>
+              <CardText>
                 <Title>{blog.title}</Title>
                 <Author>{blog.author}</Author>
-              </BlogText>
+              </CardText>
               <Line />
-              <BlogLink>
+              <CardLink>
                 <Button variant="secondary" label="READ STORY" />
                 <Arrow />
-              </BlogLink>
-            </BlogDescription>
-          </BlogImageContainer>
+              </CardLink>
+            </CardDescription>
+          </CardImageContainer>
         </>
       ))}
-    </BlogContainer>
+    </CardContainer>
   );
 };
 

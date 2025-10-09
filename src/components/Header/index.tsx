@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/icons/logo.svg";
 import { MainContainer, ListItem, HeaderList, HeaderNav } from "./styles";
 import Button from "../Button";
 

@@ -11,6 +11,7 @@ export const StyledButton = styled.button<{
   letter-spacing: 2px;
   line-height: auto;
 
+  cursor: pointer;
   ${({ variant }) =>
     variant === "primary" &&
     `
@@ -21,7 +22,6 @@ export const StyledButton = styled.button<{
     &:hover {
       background-color: ${colors.secondary01};
       color: black;
-      cursor: pointer; 
     }
   `}
 
@@ -36,7 +36,6 @@ export const StyledButton = styled.button<{
     background-color : transparent;
     &:hover {
       text-decoration: underline;
-      cursor: pointer; 
     }
   `}
    ${({ variant }) =>
@@ -51,7 +50,6 @@ export const StyledButton = styled.button<{
     &:hover {
       text-decoration: underline;
       color: black;
-      cursor: pointer; 
     }
   `}
 `;

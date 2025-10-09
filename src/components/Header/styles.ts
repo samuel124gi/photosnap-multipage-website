@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import colors from "../../styles/colors";
 
 export const MainContainer = styled.div`
-  width: 1000px;
+  width: 1100px;
   padding: 10px 20px;
-  margin: auto;
+  margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

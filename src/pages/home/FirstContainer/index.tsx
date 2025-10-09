@@ -6,10 +6,11 @@ import {
   TextContainer,
   ColorContainer,
   Image,
+  ButtonContainer,
 } from "./styles";
 
-import storyImage from "../../../images/create-and-share.jpg";
-import ButtonImage from "../../../assets/button-arrow.svg";
+import storyImage from "../../../assets/images/create-and-share.jpg";
+import ButtonImage from "../../../assets/icons/button-arrow.svg";
 import Button from "../../../components/Button";
 
 const FirstContainer = () => {
@@ -26,10 +27,12 @@ const FirstContainer = () => {
             storytellers. We make it easy to share photos, tell <br /> stories
             and connect with others.
           </Text>
-          <Button variant="secondary" label="GET AN INVITE">
+          <ButtonContainer>
+            <Button variant="secondary" label="GET AN INVITE" />
             <ButtonImage />
-          </Button>
+          </ButtonContainer>
         </TextContainer>
+
         <ImageContainer>
           <Image src={storyImage} />
         </ImageContainer>
