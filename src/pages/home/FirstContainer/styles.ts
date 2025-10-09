@@ -25,8 +25,12 @@ export const ColorContainer = styled.div`
 export const ImageContainer = styled.div`
   height: 530px;
   width: 760px;
-  object-fit: cover;
   overflow: hidden;
+`;
+export const Image = styled.img`
+  width: 100%
+  height: 100%
+  object-fit: cover;
 `;
 
 export const MainContainer = styled.div`

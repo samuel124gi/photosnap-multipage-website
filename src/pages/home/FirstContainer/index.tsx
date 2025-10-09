@@ -5,10 +5,10 @@ import {
   ImageContainer,
   TextContainer,
   ColorContainer,
-  // InnerContainer,
+  Image,
 } from "./styles";
 
-import FirstImage from "../../../assets/first-image.svg";
+import storyImage from "../../../images/create-and-share.jpg";
 import ButtonImage from "../../../assets/button-arrow.svg";
 import Button from "../../../components/Button";
 
@@ -16,7 +16,6 @@ const FirstContainer = () => {
   return (
     <div>
       <MainContainer>
-        {/* <InnerContainer> */}
         <ColorContainer />
         <TextContainer>
           <Heading>
@@ -32,9 +31,8 @@ const FirstContainer = () => {
           </Button>
         </TextContainer>
         <ImageContainer>
-          <FirstImage />
+          <Image src={storyImage} />
         </ImageContainer>
-        {/* </InnerContainer> */}
       </MainContainer>
     </div>
   );

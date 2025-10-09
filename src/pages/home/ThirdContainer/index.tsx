@@ -4,9 +4,10 @@ import {
   Text,
   ImageContainer,
   TextContainer,
+  Image,
 } from "./styles";
 
-import Image from "../../../assets/character.svg";
+import storyImage from "../../../images/designed-for-everyone.jpg";
 import ButtonImage from "../../../assets/black-arrow.svg";
 import Button from "../../../components/Button";
 
@@ -30,7 +31,7 @@ const ThirdContainer = () => {
           </Button>
         </TextContainer>
         <ImageContainer>
-          <Image />
+          <Image src={storyImage} />
         </ImageContainer>
       </MainContainer>
     </>
