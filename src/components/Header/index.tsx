@@ -8,9 +8,9 @@ const Header = () => {
       <Logo />
       <HeaderNav>
         <HeaderList>
-          <ListItem>STORIES</ListItem>
-          <ListItem>FEATURES</ListItem>
-          <ListItem>PRICING</ListItem>
+          <ListItem to={"/stories"}>STORIES</ListItem>
+          <ListItem to={"/feature"}>FEATURES</ListItem>
+          <ListItem to={"/pricing"}>PRICING</ListItem>
         </HeaderList>
       </HeaderNav>
       <Button variant="primary" label="GET AN INVITE" />

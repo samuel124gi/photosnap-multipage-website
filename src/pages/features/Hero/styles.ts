@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import colors from "../../../styles/colors";
 
 export const TextContainer = styled.div`
-  padding: 0px 65px;
+  padding: 0px 80px;
   color: ${colors.white};
   display: flex;
   flex-direction: column;
@@ -16,14 +16,14 @@ export const ColorContainer = styled.div`
     ${colors.accent02},
     ${colors.accent01}
   );
-  width: 3px;
-  height: 200px;
+  width: 4px;
+  height: 140px;
   position: absolute;
 `;
 
 export const ImageContainer = styled.div`
-  height: 530px;
-  width: 760px;
+  height: 490px;
+  width: 700px;
   overflow: hidden;
 `;
 export const Image = styled.img`

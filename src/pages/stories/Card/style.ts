@@ -1,12 +1,11 @@
 import styled from "@emotion/styled";
-import colors from "../../styles/colors";
+import colors from "../../../styles/colors";
 
 export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   max-width: 100%;
-  justify-content: space-between;
 `;
 export const CardImage = styled.img`
   width: 100%;
@@ -62,4 +61,9 @@ export const CardLink = styled.a`
   display: flex;
   width: 100%;
   justify-content: space-between;
+`;
+
+export const DatePublished = styled.p`
+  font-size: 13px;
+  letter-spacing: auto;
 `;

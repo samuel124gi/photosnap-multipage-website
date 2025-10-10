@@ -5,6 +5,7 @@ import ThirdContainer from "./ThirdContainer";
 import { MainContainer } from "./styles";
 import Card from "../../components/Card";
 import FeatureCard from "../../shared/FeatureCard";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ThirdContainer />
       <Card />
       <FeatureCard />
+      <Footer />
     </MainContainer>
   );
 };

@@ -16,7 +16,7 @@ export const StyledButton = styled.button<{
     variant === "primary" &&
     `
     padding: 10px 20px;
-    background-color : transparent;
+    background-color : black;
     color: ${colors.white};
     
     &:hover {
@@ -36,20 +36,6 @@ export const StyledButton = styled.button<{
     background-color : transparent;
     &:hover {
       text-decoration: underline;
-    }
-  `}
-   ${({ variant }) =>
-    variant === "tertiary" &&
-    `
-    
-    color: ${colors.black};
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color : transparent;
-    &:hover {
-      text-decoration: underline;
-      color: black;
     }
   `}
 `;
