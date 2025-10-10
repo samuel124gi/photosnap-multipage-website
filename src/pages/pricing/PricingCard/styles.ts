@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 import colors from "../../../styles/colors";
 
+// interface SwitchButtonProps {
+//   left: boolean;
+// }
+
 export const MainContainer = styled.div`
   height: 700px;
   display: flex;
@@ -22,7 +26,7 @@ export const BudgetContainer = styled.div`
 export const SwitchContainer = styled.div`
   margin: 0px auto;
   height: 32px;
-  width: 64px;
+  width: 100px;
   border-radius: 16px;
   display: flex;
   gap: 32px;
@@ -49,11 +53,14 @@ export const InnerContainer = styled.div`
   align-items: center;
   gap: 30px;
 `;
-export const SwitchButton = styled.div`
+export const SwitchButton = styled.button`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: ${colors.black};
+  // background-color: ${colors.black};
+  border: none;
+  background-color: red;
+  transition: all 0.3s ease;
 `;
 
 export const SmallCard = styled.div`

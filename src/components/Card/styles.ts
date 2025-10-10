@@ -28,7 +28,7 @@ export const CardDescription = styled.div`
   position: absolute;
   color: ${colors.white};
   width: 250px;
-  bottom: 20px;
+  bottom: 30px;
   display: flex;
 
   flex-direction: column;
