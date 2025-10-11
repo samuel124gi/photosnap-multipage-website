@@ -5,7 +5,6 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: red;
 `;
 export const ImageContainer = styled.div`
   height: 280px;

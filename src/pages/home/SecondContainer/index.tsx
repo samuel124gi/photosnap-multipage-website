@@ -32,7 +32,7 @@ const SecondContainer = () => {
             <br /> everyone.
           </Text>
           <ButtonContainer>
-            <Button variant="tertiary" label="VIEW THE STORIES" />
+            <Button variant="primary" label="VIEW THE STORIES" />
             <ButtonImage />
           </ButtonContainer>
         </TextContainer>

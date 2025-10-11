@@ -8,6 +8,8 @@ export const TextContainer = styled.div`
   flex-direction: column;
   gap: 30px;
   height: 100%;
+
+  justify-content: center;
 `;
 
 export const ImageContainer = styled.div`
@@ -22,11 +24,10 @@ export const Image = styled.img`
 `;
 export const MainContainer = styled.div`
   width: 100%;
-
   align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: ${colors.white};
-  overflow: hidden;
 `;
 
 export const Heading = styled.h1`

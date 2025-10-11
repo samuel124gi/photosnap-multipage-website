@@ -6,6 +6,8 @@ export const TextContainer = styled.div`
   color: ${colors.white};
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
   gap: 30px;
   height: 100%;
 `;
@@ -24,7 +26,6 @@ export const ColorContainer = styled.div`
 export const ImageContainer = styled.div`
   height: 490px;
   width: 700px;
-  overflow: hidden;
 `;
 export const Image = styled.img`
   width: 100%
@@ -34,7 +35,8 @@ export const Image = styled.img`
 
 export const MainContainer = styled.div`
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
   background-color: ${colors.black};
