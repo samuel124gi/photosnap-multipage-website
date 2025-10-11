@@ -8,7 +8,8 @@ export const MainContainer = styled.div`
 export const InnerContainer = styled.div`
   width: 1100px;
   max-width: 1100px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0px auto;
   gap: 30px;
   justify-content: space-between;

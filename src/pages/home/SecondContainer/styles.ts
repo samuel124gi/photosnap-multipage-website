@@ -26,11 +26,9 @@ export const Image = styled.img`
 
 export const MainContainer = styled.div`
   width: 100%;
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: ${colors.white};
-  overflow: hidden;
-  height: 530px;
 `;
 
 export const Heading = styled.h1`

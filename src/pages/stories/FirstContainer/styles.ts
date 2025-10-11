@@ -13,7 +13,8 @@ export const Image = styled.img`
 `;
 
 export const MainContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   flex-direction: column;
   align-items: center;
   justify-content: center;
