@@ -57,9 +57,8 @@ export const SwitchButton = styled.button`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  // background-color: ${colors.black};
+  background-color: ${colors.black};
   border: none;
-  background-color: red;
   transition: all 0.3s ease;
 `;
 
