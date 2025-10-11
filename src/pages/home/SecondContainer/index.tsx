@@ -4,10 +4,12 @@ import {
   Text,
   ImageContainer,
   TextContainer,
+  Image,
+  ButtonContainer,
 } from "./styles";
 
-import SecondImage from "../../../assets/desktop.svg";
-import ButtonImage from "../../../assets/black-arrow.svg";
+import SecondImage from "../../../assets/images/beautiful-stories.jpg";
+import ButtonImage from "../../../assets/icons/black-arrow.svg";
 import Button from "../../../components/Button";
 
 const SecondContainer = () => {
@@ -15,7 +17,7 @@ const SecondContainer = () => {
     <>
       <MainContainer>
         <ImageContainer>
-          <SecondImage />
+          <Image src={SecondImage} />
         </ImageContainer>
         <TextContainer>
           <Heading>
@@ -29,10 +31,10 @@ const SecondContainer = () => {
             other networks. Then share your story with
             <br /> everyone.
           </Text>
-
-          <Button variant="tertiary" label="VIEW THE STORIES">
+          <ButtonContainer>
+            <Button variant="tertiary" label="VIEW THE STORIES" />
             <ButtonImage />
-          </Button>
+          </ButtonContainer>
         </TextContainer>
       </MainContainer>
     </>

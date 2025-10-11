@@ -5,18 +5,18 @@ import {
   ImageContainer,
   TextContainer,
   ColorContainer,
-  // InnerContainer,
+  Image,
+  ButtonContainer,
 } from "./styles";
 
-import FirstImage from "../../../assets/first-image.svg";
-import ButtonImage from "../../../assets/button-arrow.svg";
+import storyImage from "../../../assets/images/create-and-share.jpg";
+import ButtonImage from "../../../assets/icons/button-arrow.svg";
 import Button from "../../../components/Button";
 
 const FirstContainer = () => {
   return (
     <div>
       <MainContainer>
-        {/* <InnerContainer> */}
         <ColorContainer />
         <TextContainer>
           <Heading>
@@ -27,14 +27,15 @@ const FirstContainer = () => {
             storytellers. We make it easy to share photos, tell <br /> stories
             and connect with others.
           </Text>
-          <Button variant="secondary" label="GET AN INVITE">
+          <ButtonContainer>
+            <Button variant="secondary" label="GET AN INVITE" />
             <ButtonImage />
-          </Button>
+          </ButtonContainer>
         </TextContainer>
+
         <ImageContainer>
-          <FirstImage />
+          <Image src={storyImage} />
         </ImageContainer>
-        {/* </InnerContainer> */}
       </MainContainer>
     </div>
   );

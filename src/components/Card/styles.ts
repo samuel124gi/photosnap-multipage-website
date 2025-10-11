@@ -1,29 +1,36 @@
 import styled from "@emotion/styled";
-import colors from "../../../styles/colors";
+import colors from "../../styles/colors";
 
-export const ImagesContainer = styled.div`
-  display: flex;
+export const CardContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   max-width: 100%;
   justify-content: space-between;
 `;
-export const FirstImage = styled.img`
+export const CardImage = styled.img`
   width: 100%;
-  height: 360px;
+  height: 100%;
+  object-fit: cover;
 `;
-export const ImageContainer = styled.div`
+export const CardImageContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 500px;
+  &:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+  }
 `;
-export const StoryDescription = styled.div`
+export const CardDescription = styled.div`
   position: absolute;
   color: ${colors.white};
   width: 250px;
-  margin: auto;
-  bottom: 20px;
+  bottom: 30px;
   display: flex;
+
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
@@ -39,7 +46,7 @@ export const Author = styled.p`
   letter-spacing: auto;
 `;
 
-export const Text = styled.div`
+export const CardText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -51,7 +58,7 @@ export const Line = styled.hr`
   opacity: 0.25;
 `;
 
-export const ButtonDiv = styled.div`
+export const CardLink = styled.a`
   display: flex;
   width: 100%;
   justify-content: space-between;

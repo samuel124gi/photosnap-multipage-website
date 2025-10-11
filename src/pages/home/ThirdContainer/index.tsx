@@ -4,10 +4,12 @@ import {
   Text,
   ImageContainer,
   TextContainer,
+  Image,
+  ButtonContainer,
 } from "./styles";
 
-import Image from "../../../assets/character.svg";
-import ButtonImage from "../../../assets/black-arrow.svg";
+import storyImage from "../../../assets/images/designed-for-everyone.jpg";
+import ButtonImage from "../../../assets/icons/black-arrow.svg";
 import Button from "../../../components/Button";
 
 const ThirdContainer = () => {
@@ -18,19 +20,18 @@ const ThirdContainer = () => {
           <Heading>
             DESIGNED FOR <br /> EVERYONE
           </Heading>
-
           <Text>
             Photosnap can help you create stories that resonate <br /> with your
             audience. Our tool is designed for <br /> photographers of all
             levels, brands, businesses you <br /> name it.
           </Text>
-
-          <Button variant="tertiary" label="VIEW THE STORIES">
+          <ButtonContainer>
+            <Button variant="tertiary" label="VIEW THE STORIES" />
             <ButtonImage />
-          </Button>
+          </ButtonContainer>
         </TextContainer>
         <ImageContainer>
-          <Image />
+          <Image src={storyImage} />
         </ImageContainer>
       </MainContainer>
     </>

@@ -3,8 +3,9 @@ import FirstContainer from "./FirstContainer";
 import SecondContainer from "./SecondContainer";
 import ThirdContainer from "./ThirdContainer";
 import { MainContainer } from "./styles";
-import ImageGrid from "./ImageGrid";
-import Card from "../../shared/Card";
+import Card from "../../components/Card";
+import FeatureCard from "../../shared/FeatureCard";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -13,8 +14,9 @@ const Home = () => {
       <FirstContainer />
       <SecondContainer />
       <ThirdContainer />
-      <ImageGrid />
       <Card />
+      <FeatureCard />
+      <Footer />
     </MainContainer>
   );
 };

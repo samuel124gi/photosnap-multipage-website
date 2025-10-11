@@ -9,9 +9,11 @@ export const InnerContainer = styled.div`
   width: 1100px;
   max-width: 1100px;
   display: flex;
-  margin: 100px auto;
+  margin: 0px auto;
   gap: 30px;
   justify-content: space-between;
+  height: 50vh;
+  align-items: center;
 `;
 
 export const Container = styled.div`
@@ -23,7 +25,7 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const TextContainer = styled.div`
+export const FeatureTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -32,13 +34,13 @@ export const TextContainer = styled.div`
   color: ${colors.black};
 `;
 
-export const Heading = styled.h1`
+export const FeatureHeading = styled.h1`
   font-size: 18px;
   font-weight: bold;
   text-align: center;
 `;
 
-export const SubTitle = styled.p`
+export const FeatureSubTitle = styled.p`
   font-size: 15px;
   letter-spacing: 0px;
   opacity: 0.6;
