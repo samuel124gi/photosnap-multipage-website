@@ -7,6 +7,7 @@ import {
   ColorContainer,
   Image,
   ButtonContainer,
+  InnerContainer,
 } from "./styles";
 
 import storyImage from "../../../assets/images/create-and-share.jpg";
@@ -19,18 +20,20 @@ const FirstContainer = () => {
       <MainContainer>
         <ColorContainer />
         <TextContainer>
-          <Heading>
-            CREATE AND <br /> SHARE YOUR <br /> PHOTO STORIES.
-          </Heading>
-          <Text>
-            Photosnap is a platform for photographers and visual <br />
-            storytellers. We make it easy to share photos, tell <br /> stories
-            and connect with others.
-          </Text>
-          <ButtonContainer>
-            <Button variant="secondary" label="GET AN INVITE" />
-            <ButtonImage />
-          </ButtonContainer>
+          <InnerContainer>
+            <Heading>
+              CREATE AND <br /> SHARE YOUR <br /> PHOTO STORIES.
+            </Heading>
+            <Text>
+              Photosnap is a platform for photographers and visual <br />
+              storytellers. We make it easy to share photos, tell <br /> stories
+              and connect with others.
+            </Text>
+            <ButtonContainer>
+              <Button variant="secondary" label="GET AN INVITE" />
+              <ButtonImage />
+            </ButtonContainer>
+          </InnerContainer>
         </TextContainer>
 
         <ImageContainer>

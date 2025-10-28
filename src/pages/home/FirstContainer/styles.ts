@@ -5,10 +5,16 @@ export const TextContainer = styled.div`
   padding: 0px 65px;
   color: ${colors.white};
   display: flex;
+  justify-content: center;
+  height: 100%;
+`;
+
+export const InnerContainer = styled.div`
+  width: 387px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  height: 100%;
 `;
 
 export const ColorContainer = styled.div`
@@ -23,9 +29,8 @@ export const ColorContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  height: 530px;
-  width: 760px;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 `;
 export const Image = styled.img`
   width: 100%

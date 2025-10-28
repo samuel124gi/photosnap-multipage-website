@@ -2,11 +2,12 @@ import styled from "@emotion/styled";
 import colors from "../../../styles/colors";
 
 export const TextContainer = styled.div`
-  padding: 0px 80px;
+  padding: 0px 30px;
   color: ${colors.white};
   display: flex;
   flex-direction: column;
-
+  // align-items: center;
+  text-align: left;
   justify-content: center;
   gap: 30px;
   height: 100%;
@@ -24,8 +25,8 @@ export const ColorContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  height: 490px;
-  width: 700px;
+  height: 100%;
+  width: 100%;
 `;
 export const Image = styled.img`
   width: 100%
@@ -38,9 +39,7 @@ export const MainContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  justify-content: space-between;
   background-color: ${colors.black};
-  overflow: hidden;
 `;
 
 export const Heading = styled.h1`

@@ -10,6 +10,21 @@ export const TextContainer = styled.div`
   gap: 30px;
   height: 100%;
 `;
+export const TetContainer = styled.div`
+  padding: 0px 65px;
+  color: ${colors.white};
+  display: flex;
+  justify-content: center;
+  height: 100%;
+`;
+
+export const InnerContainer = styled.div`
+  width: 387px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+`;
 
 export const ColorContainer = styled.div`
   background: linear-gradient(
@@ -23,8 +38,8 @@ export const ColorContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  height: 490px;
-  width: 700px;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 `;
 export const Image = styled.img`
