@@ -1,6 +1,4 @@
 import styled from "@emotion/styled";
-import colors from "../../../styles/colors";
-
 interface SmallCardPropps {
   isPro?: boolean;
 }
