@@ -6,6 +6,7 @@ import {
   TextContainer,
   Image,
   ButtonContainer,
+  InnerContainer,
 } from "./styles";
 
 import SecondImage from "../../../assets/images/beautiful-stories.jpg";
@@ -20,21 +21,22 @@ const SecondContainer = () => {
           <Image src={SecondImage} />
         </ImageContainer>
         <TextContainer>
-          <Heading>
-            {" "}
-            BEAUTIFUL <br /> STORIES <br /> EVERY TIME
-          </Heading>
+          <InnerContainer>
+            <Heading>
+              BEAUTIFUL <br /> STORIES <br /> EVERY TIME
+            </Heading>
 
-          <Text>
-            We provide design templates to ensure your stories <br /> look
-            terrific. Easily add photos, text, embed maps and <br /> media from
-            other networks. Then share your story with
-            <br /> everyone.
-          </Text>
-          <ButtonContainer>
-            <Button variant="primary" label="VIEW THE STORIES" />
-            <ButtonImage />
-          </ButtonContainer>
+            <Text>
+              We provide design templates to ensure your stories <br /> look
+              terrific. Easily add photos, text, embed maps and <br /> media
+              from other networks. Then share your story with
+              <br /> everyone.
+            </Text>
+            <ButtonContainer>
+              <Button variant="primary" label="VIEW THE STORIES" />
+              <ButtonImage />
+            </ButtonContainer>
+          </InnerContainer>
         </TextContainer>
       </MainContainer>
     </>

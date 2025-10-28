@@ -1,11 +1,4 @@
 import {
-  MainContainer,
-  BudgetContainer,
-  OtherBudget,
-  SwitchButton,
-  CurrentBudget,
-  SwitchContainer,
-  InnerContainer,
   SmallCard,
   BudgetType,
   BudgetDescription,
@@ -14,58 +7,44 @@ import {
 } from "./styles";
 import Button from "../../../components/Button";
 
-const BUDGET = [
-  {
-    type: "BASIC",
-    description:
-      " Includes basic usage of our platform. Recommended for new and aspiring photographers.",
-    price: "$19.00",
-    period: "Per Month",
-  },
-  {
-    type: "Pro",
-    description:
-      "More advanced features available. Recommended for photography  veterans and professionals.",
-    price: "$39.00",
-    period: "Per Month",
-  },
-  {
-    type: "Business",
-    description:
-      " Additional features available such as more detailed metrics. Recommended for business owners.",
-    price: "$99.00",
-    period: "Per Month",
-  },
-];
+interface PricingCardProps {
+  type: string;
+  description: string;
+  price: string;
+  period: string;
+  isPro?: boolean;
+}
 
-const PricingCard = () => {
+const proButtonStyles = {
+  backgroundColor: "white",
+  color: "black",
+  border: "none",
+};
+
+const PricingCard = ({
+  type,
+  description,
+  price,
+  period,
+  isPro,
+}: PricingCardProps) => {
   return (
-    <MainContainer>
-      {
-        <BudgetContainer>
-          <CurrentBudget>MONTHLY</CurrentBudget>
-          <SwitchContainer>
-            <SwitchButton />
-          </SwitchContainer>
-          <OtherBudget>YEARLY</OtherBudget>
-        </BudgetContainer>
-      }
-      <InnerContainer>
-        {BUDGET.map((budget) => (
-          <SmallCard>
-            <Group>
-              <BudgetType>{budget.type}</BudgetType>
-              <BudgetDescription>{budget.description}</BudgetDescription>
-            </Group>
-            <Group>
-              <BudgetPrice>{budget.price}</BudgetPrice>
-              <BudgetDescription>{budget.price}</BudgetDescription>
-            </Group>
-            <Button variant="primary" label="PICK PLAN" />
-          </SmallCard>
-        ))}
-      </InnerContainer>
-    </MainContainer>
+    <SmallCard isPro={isPro}>
+      <Group>
+        <BudgetType>{type}</BudgetType>
+        <BudgetDescription>{description}</BudgetDescription>
+      </Group>
+      <Group>
+        <BudgetPrice>{price}</BudgetPrice>
+        <BudgetDescription>{period}</BudgetDescription>
+      </Group>
+      <Button
+        variant="primary"
+        label="PICK PLAN"
+        style={isPro ? proButtonStyles : {}}
+      />
+    </SmallCard>
   );
 };
+
 export default PricingCard;

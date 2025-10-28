@@ -5,13 +5,25 @@ export const TextContainer = styled.div`
   color: ${colors.black};
   padding: 0px 63px;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  height: 100%;
-
   justify-content: center;
+  height: 100%;
 `;
 
+export const Textontainer = styled.div`
+  padding: 0px 65px;
+  color: ${colors.white};
+  display: flex;
+  justify-content: center;
+  height: 100%;
+`;
+
+export const InnerContainer = styled.div`
+  width: 387px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+`;
 export const ImageContainer = styled.div`
   height: 530px;
   width: 760px;
